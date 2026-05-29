@@ -1,0 +1,5 @@
+Comandos Utilizados
+
+whoami - Mostra nome do utilizador atualmente autenticado.
+id-      Mostra o identificador do utilizador (UID), grupo principal e grupos associados.
+groups- Mostra os grupos aos quais o utilizador pertence. 
