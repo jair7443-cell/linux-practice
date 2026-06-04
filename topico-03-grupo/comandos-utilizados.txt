@@ -1,0 +1,30 @@
+mkdir- p projeto-web/{public,config,logs,docs}
+
+touch projeto-web/public/index.html
+touch projeto-web/config/app.conf
+touch projeto-web/logs/system.log
+touch projeto-web/docs/manual.txt
+
+sudo groupadd admins
+sudo groupadd webops
+sudo groupadd auditores
+sudo groupadd visitantes
+
+sudo useradd -m admin1
+sudo useradd -m webuser1
+sudo useradd -m auditor1
+sudo useradd -m visitante1
+
+sudo usermod -aG admins admin1
+sudo usermod -aG webops webuser1
+sudo usermod -aG auditores auditor1
+sudo usermod -aG visitantes visitante1
+
+chmod 775 projeto-web/public 
+chmod 750 projeto-web/config
+chmod 750 projeto-web/logs
+chmod 755 projeto-web/docs
+
+sudo apt isntall openssh-server
+systemctl status ssh
+ssh 127.0.0.1
