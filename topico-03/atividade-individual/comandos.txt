@@ -1,0 +1,55 @@
+# Criação da estrutura da atividade
+
+mkdir -p topico-03/atividade-individual/site
+mkdir -p topico-03/atividade-individual/evidencias
+
+touch topico-03/atividade-individual/comandos.txt
+touch topico-03/atividade-individual/publicacao.md
+touch topico-03/atividade-individual/validacao.md
+touch topico-03/atividade-individual/README.md
+
+touch topico-03/atividade-individual/site/index.html
+touch topico-03/atividade-individual/site/sobre.html
+touch topico-03/atividade-individual/site/style.css
+
+tree topico-03
+
+# Edição dos ficheiros
+
+nano topico-03/atividade-individual/site/index.html
+nano topico-03/atividade-individual/site/sobre.html
+nano topico-03/atividade-individual/site/style.css
+
+# Instalação do Nginx
+
+sudo apt update
+sudo apt install nginx -y
+
+# Gestão do serviço Nginx
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+
+# Publicação do site
+
+sudo mkdir -p /var/www/html/topico-03
+
+sudo cp ~/projeto_linux/topico-03/atividade-individual/site/* /var/www/html/topico-03/
+
+# Validação
+
+curl http://localhost/topico-03
+curl http://localhost/topico-03/sobre.html
+
+# Verificação de ficheiros
+
+ls -l /var/www/html/topico-03
+tree topico-03
+
+# GitHub
+
+git status
+git add .
+git commit -m "Adiciona atividade individual do topico 03"
+git push
