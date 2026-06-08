@@ -1,12 +1,23 @@
-<<<<<<< HEAD
-projeto linux Básico
-comandos aprendidos:
-- whoami
--pwd
--ls
--mkdir
--touch
-=======
-# linux-practice
-Practical exercises for Linux and Cloud Security module
->>>>>>> a6cbcb1623ab28268b0a4789d376079ae013ed39
+# Linux Practice
+
+Repositório criado para armazenar os exercícios práticos do módulo Linux, Segurança e Cloud.
+
+## Conteúdo
+
+- Tópico 02 - Exercícios Individuais
+- Tópico 03 - Atividade em Grupo
+- Tópico 03 - Atividade Individual
+
+## Tecnologias utilizadas
+
+- Linux Ubuntu
+- Git
+- GitHub
+- SSH
+- Nginx
+- HTML
+- CSS
+
+## Autor
+
+Jair Mendes
