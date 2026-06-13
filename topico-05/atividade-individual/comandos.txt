@@ -1,0 +1,20 @@
+uptime
+free -h
+df -h
+who
+journalctl -n 20
+last
+
+ls -l /etc/hosts
+
+mkdir backups
+cp /etc/hosts backups/
+tar -czvf backups-hosts.tar.gz backups/
+
+mkdir recuperacao-testes
+tar -xzvf backups-hosts.tar.gz -C recuperacao-testes
+
+ls recuperacao-testes
+cat recuperacao-testes/backups/hosts
+
+systemctl status nginx
