@@ -1,0 +1,17 @@
+pwd - Mostrar diretório atual
+
+ls - Listar ficheiros e diretórios
+
+mkdir - Criar diretórios
+
+touch - Criar ficheiros vazios
+
+uname -a - Mostrar informações do sistema
+
+whoami - Mostrar utilizador atual
+
+hostname - Mostrar nome do computador
+
+df -h - Mostrar utilização do disco
+
+free -h - Mostrar utilização da memória
